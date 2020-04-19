@@ -2,7 +2,6 @@
 ##File path for the file 
 file_path 
 
-
 #Code starts here
 def read_file(path):
     file = open(path,'r')
@@ -10,7 +9,6 @@ def read_file(path):
     file.close
     return sentence
 sample_message = read_file(file_path)
-
 
 # --------------
 #Code starts here
@@ -25,8 +23,6 @@ def fuse_msg(message_a,message_b):
     return str(quotient)
 secret_msg_1 = fuse_msg(message_1,message_2)
 
-
-
 # --------------
 #Code starts here
 message_3 = read_file(file_path_3)
@@ -40,7 +36,6 @@ def substitute_msg(message_c):
         sub = 'Marine Biologist'
     return sub
 secret_msg_2 = substitute_msg(message_3)
-
 
 # --------------
 # File path for message 4  and message 5
@@ -59,11 +54,6 @@ def compare_msg(message_d,message_e):
     final_msg =" ".join(c_list)
     return final_msg
 secret_msg_3 = compare_msg(message_4,message_5)
-print(secret_msg_3)
-
-
-
-
 
 # --------------
 #Code starts here
@@ -76,8 +66,6 @@ def extract_msg(message_f):
     final_msg=" ".join(b_list)
     return final_msg
 secret_msg_4 = extract_msg(message_6)
-print(secret_msg_4)
-
 
 # --------------
 #Secret message parts in the correct order
